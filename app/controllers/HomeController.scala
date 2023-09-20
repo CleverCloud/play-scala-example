@@ -109,7 +109,7 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents, i
       val url = new URI(origin)
       val allowedHosts = Seq(".cleverapps.io") // Add cleverapps host here
       allowedHosts.exists(host => url.getHost.endsWith(host))
-      //url.getHost == "localhost" &&
+      url.getHost == "0.0.0.0"
         (url.getPort match { case 8080 | 19001 => true; case _ => false })
     } catch {
       case e: Exception => false

@@ -8,6 +8,10 @@ html, body {
     margin: 0 auto -60px;
 }
 
+.button {
+    color: pink;
+}
+
 .footer {
     height: 60px;
 }

@@ -7,6 +7,7 @@ lazy val root = (project in file("."))
     version := "1.0-SNAPSHOT",
     crossScalaVersions := Seq("2.13.12", "3.3.1"),
     scalaVersion := crossScalaVersions.value.head,
+    PlayKeys.playDefaultPort := 8080,
     libraryDependencies ++= Seq(
       guice,
       "org.webjars" %% "webjars-play" % "2.9.0-RC2",
@@ -20,6 +21,7 @@ lazy val root = (project in file("."))
       "com.typesafe.akka" %% "akka-stream-testkit" % akkaVersion % Test,
       "org.scalatestplus.play" %% "scalatestplus-play" % "6.0.0-RC2" % Test
     ),
+    
     (Test / javaOptions) += "-Dtestserver.port=19001",
     scalacOptions ++= Seq(
       "-feature",

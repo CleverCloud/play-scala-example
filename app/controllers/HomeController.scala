@@ -108,7 +108,7 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents, i
     try {
       val url = new URI(origin)
       url.getHost == "localhost" &&
-        (url.getPort match { case 9000 | 19001 => true; case _ => false })
+        (url.getPort match { case 8080 | 19001 => true; case _ => false })
     } catch {
       case e: Exception => false
     }

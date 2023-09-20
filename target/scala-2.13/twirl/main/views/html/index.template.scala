@@ -43,7 +43,7 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
         <div class="wrap">
             <div class="container-fluid">
                 <div>
-                    <h1 class="">Chat Room</h1>
+                    <h1 class="">The Scala Chat Room</h1>
                 </div>
 
                 <div class="row">
@@ -58,14 +58,14 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
         <div class="footer navbar-fixed-bottom">
             <div class="row">
                 <div class="col-xs-8 col-sm-9">
-                    <input id="message" placeholder="Type Here" type="text"
+                    <input id="message" placeholder="Rant Here" type="text"
                       autofocus
                       autocomplete="off" spellcheck="false" autocorrect="off"
                       class="form-control input-lg" />
                 </div>
 
                 <div class="col-xs-4 col-sm-3">
-                    <button id="send" type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                    <button id="send" type="submit" class="btn btn-primary btn-lg btn-block">Speak up!</button>
                 </div>
             </div>
         </div>
@@ -94,8 +94,8 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
               /*
                   -- GENERATED --
                   SOURCE: app/views/index.scala.html
-                  HASH: 3405918bd742d856734da2556e4d59762a45cbe9
-                  MATRIX: 758->1|926->76|1176->300|1195->311|1249->345|1286->355|1306->366|1367->406|1404->416|1476->461|1491->467|1546->501|1634->562|1649->568|1702->600|2825->1696|2845->1707|2899->1740|2936->1750|2956->1761|3015->1799|3051->1808|3115->1845|3130->1851|3195->1895|3279->1952|3294->1958|3347->1990|3387->2003|3421->2015
+                  HASH: 51d1d16096209f3bacf9ee76d7781c0d7f1f8a6a
+                  MATRIX: 758->1|926->76|1176->300|1195->311|1249->345|1286->355|1306->366|1367->406|1404->416|1476->461|1491->467|1546->501|1634->562|1649->568|1702->600|2840->1711|2860->1722|2914->1755|2951->1765|2971->1776|3030->1814|3066->1823|3130->1860|3145->1866|3210->1910|3294->1967|3309->1973|3362->2005|3402->2018|3436->2030
                   LINES: 21->1|26->2|33->9|33->9|33->9|34->10|34->10|34->10|36->12|36->12|36->12|36->12|37->13|37->13|37->13|73->49|73->49|73->49|74->50|74->50|74->50|75->51|75->51|75->51|75->51|76->52|76->52|76->52|76->52|76->52
                   -- GENERATED --
               */

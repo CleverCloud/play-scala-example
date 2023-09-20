@@ -1,17 +1,17 @@
-2023-09-21 01:19:16,460 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
-2023-09-21 01:19:16,472 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-21 01:25:22,927 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2023-09-21 01:25:22,940 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-4 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
 
-2023-09-21 01:19:16,494 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev) (no global state)
-2023-09-21 01:19:16,608 [INFO] from controllers.HomeController in application-akka.actor.default-dispatcher-4 - index: 
-2023-09-21 01:19:16,828 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-10 - Checking the ORIGIN 
-2023-09-21 01:19:16,828 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-10 - originCheck: originValue = http://localhost:8080
-2023-09-21 01:19:24,743 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-5-thread-3 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 40000 milliseconds timeout
-2023-09-21 01:19:24,744 [INFO] from akka.actor.CoordinatedShutdown in play-dev-mode-akka.actor.default-dispatcher-12 - Running CoordinatedShutdown with reason [ServerStoppedReason]
-2023-09-21 01:19:24,745 [INFO] from play.core.server.AkkaHttpServer in pool-5-thread-3 - Stopping Akka HTTP server...
-2023-09-21 01:19:24,747 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-5 - Unbinding /[0:0:0:0:0:0:0:0]:8080
-2023-09-21 01:19:24,749 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-5 - Terminating server binding for /[0:0:0:0:0:0:0:0]:8080
-2023-09-21 01:19:24,756 [INFO] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-8 - Running CoordinatedShutdown with reason [ApplicationStoppedReason]
-2023-09-21 01:19:24,773 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-36 - Running provided shutdown stop hooks
+2023-09-21 01:25:22,962 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-4 - Application started (Dev) (no global state)
+2023-09-21 01:25:23,046 [INFO] from controllers.HomeController in application-akka.actor.default-dispatcher-4 - index: 
+2023-09-21 01:25:23,240 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-4 - Checking the ORIGIN 
+2023-09-21 01:25:23,240 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-4 - originCheck: originValue = http://localhost:8080
+2023-09-21 01:25:30,772 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-5-thread-3 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 40000 milliseconds timeout
+2023-09-21 01:25:30,773 [INFO] from akka.actor.CoordinatedShutdown in play-dev-mode-akka.actor.default-dispatcher-16 - Running CoordinatedShutdown with reason [ServerStoppedReason]
+2023-09-21 01:25:30,775 [INFO] from play.core.server.AkkaHttpServer in pool-5-thread-3 - Stopping Akka HTTP server...
+2023-09-21 01:25:30,779 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-5 - Unbinding /[0:0:0:0:0:0:0:0]:8080
+2023-09-21 01:25:30,782 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-5 - Terminating server binding for /[0:0:0:0:0:0:0:0]:8080
+2023-09-21 01:25:30,790 [INFO] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-12 - Running CoordinatedShutdown with reason [ApplicationStoppedReason]
+2023-09-21 01:25:30,809 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-14 - Running provided shutdown stop hooks

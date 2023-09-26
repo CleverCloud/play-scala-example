@@ -108,7 +108,7 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents, i
     try {
       val url = new URI(origin)
       val isLocalhost = url.getHost == "localhost" && (url.getPort match { case 8080 | 19001 => true; case _ => false })
-      val isProduction = url.getHost == "scala-chat.cleverapps.io" // replace with your production host
+      val isProduction = url.getHost == "scala-chat.cleverapps.io/chat" // replace with your production host
       isLocalhost || isProduction
   } catch {
     case e: Exception => false

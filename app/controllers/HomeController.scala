@@ -116,7 +116,7 @@ def index: Action[AnyContent] = Action { implicit request: RequestHeader =>
     try {
       val url = new URI(origin)
       val isLocalhost = url.getHost == "localhost" && (url.getPort match { case 8080 | 19001 => true; case _ => false })
-      val isProduction = url.getHost == "scala-chat.cleverapps.io" // replace with en var
+      val isProduction = url.getHost == System.getenv("URL") // replace with en var
       isLocalhost || isProduction
   } catch {
     case e: Exception => false

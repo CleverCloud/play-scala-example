@@ -580,3 +580,16 @@
 {"@timestamp":"2023-09-26T16:30:29.931466+02:00","message":"Terminating server binding for /[0:0:0:0:0:0:0:0]:8080"}
 {"@timestamp":"2023-09-26T16:30:29.939138+02:00","message":"Running CoordinatedShutdown with reason [ApplicationStoppedReason]"}
 {"@timestamp":"2023-09-26T16:30:29.952703+02:00","message":"Running provided shutdown stop hooks"}
+{"@timestamp":"2023-09-26T16:42:24.496873+02:00","message":"Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):\n\n"}
+{"@timestamp":"2023-09-26T16:42:24.502616+02:00","message":"Slf4jLogger started"}
+{"@timestamp":"2023-09-26T16:42:24.534563+02:00","message":"Application started (Dev) (no global state)"}
+{"@timestamp":"2023-09-26T16:42:24.585444+02:00","message":"index: ws://localhost:8080/chat","host":"localhost:8080","path":"/"}
+{"@timestamp":"2023-09-26T16:42:24.782083+02:00","message":"Checking the ORIGIN ","host":"localhost:8080","path":"/chat"}
+{"@timestamp":"2023-09-26T16:42:24.782387+02:00","message":"originCheck: originValue = http://localhost:8080","host":"localhost:8080","path":"/chat"}
+{"@timestamp":"2023-09-26T16:42:29.676412+02:00","message":"Starting synchronous coordinated shutdown with ServerStoppedReason reason and 40000 milliseconds timeout"}
+{"@timestamp":"2023-09-26T16:42:29.679217+02:00","message":"Stopping Akka HTTP server..."}
+{"@timestamp":"2023-09-26T16:42:29.678054+02:00","message":"Running CoordinatedShutdown with reason [ServerStoppedReason]"}
+{"@timestamp":"2023-09-26T16:42:29.683159+02:00","message":"Unbinding /[0:0:0:0:0:0:0:0]:8080"}
+{"@timestamp":"2023-09-26T16:42:29.68669+02:00","message":"Terminating server binding for /[0:0:0:0:0:0:0:0]:8080"}
+{"@timestamp":"2023-09-26T16:42:29.693692+02:00","message":"Running CoordinatedShutdown with reason [ApplicationStoppedReason]"}
+{"@timestamp":"2023-09-26T16:42:29.705368+02:00","message":"Running provided shutdown stop hooks"}

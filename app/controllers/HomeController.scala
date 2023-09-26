@@ -49,12 +49,14 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents, i
 
 
 def index: Action[AnyContent] = Action { implicit request: RequestHeader =>
-  val webSocketScheme = if(request.secure) "wss" else "ws"
+  val proto = request.headers.get("X-Forwarded-Proto").getOrElse("http")
+  val webSocketScheme = if (proto == "https") "wss" else "ws"
   val host = request.host
   val webSocketUrl = s"$webSocketScheme://$host${routes.HomeController.chat().url}"
   logger.info(s"index: $webSocketUrl")
   Ok(views.html.index(webSocketUrl))
 }
+
 
 
     

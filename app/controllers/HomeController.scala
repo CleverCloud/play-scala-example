@@ -47,11 +47,17 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents, i
     Flow.fromSinkAndSource(chatSink, chatSource)
   }
 
-  def index: Action[AnyContent] = Action { implicit request: RequestHeader =>
-    val webSocketUrl = routes.HomeController.chat().webSocketURL()
-    logger.info(s"index: ")
-    Ok(views.html.index(webSocketUrl))
-  }
+
+def index: Action[AnyContent] = Action { implicit request: RequestHeader =>
+  val webSocketScheme = if(request.secure) "wss" else "ws"
+  val host = request.host
+  val webSocketUrl = s"$webSocketScheme://$host${routes.HomeController.chat().url}"
+  logger.info(s"index: $webSocketUrl")
+  Ok(views.html.index(webSocketUrl))
+}
+
+
+    
 
   def chat(): WebSocket = {
     WebSocket.acceptOrResult[WSMessage, WSMessage] {
@@ -108,7 +114,7 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents, i
     try {
       val url = new URI(origin)
       val isLocalhost = url.getHost == "localhost" && (url.getPort match { case 8080 | 19001 => true; case _ => false })
-      val isProduction = url.getHost == "scala-chat.cleverapps.io/chat" // replace with your production host
+      val isProduction = url.getHost == "scala-chat.cleverapps.io" // replace with en var
       isLocalhost || isProduction
   } catch {
     case e: Exception => false

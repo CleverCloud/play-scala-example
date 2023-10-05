@@ -1,10 +1,29 @@
-# play-scala-chatroom-example
+# Play Scala Chatroom Example
 
-This is a simple chatroom using Play and Websockets with the Scala API.
+This is a simple fork by Clever Cloud of a chatroom using Play and Websockets with the Scala API.
+
+## 🚀 Deploy this repo on Clever Cloud
+
+You can deploy this repo as a Scala+SBT app on Clever Cloud.
+
+[📖 Check our Scala+SBT documentation for further configuration](https://www.clever-cloud.com/doc/deploy/application/scala/scala/)
+
+### Environment variabales
+
+Inject the following environment variables:
+
+```
+APPLICATION_SECRET="<your-app-secret>"
+CC_JAVA_VERSION="11"
+URL="<deployed-app-url>"
+```
+[📖 Check all environment variables your can use on Clever Cloud](https://www.clever-cloud.com/doc/reference/reference-environment-variables/)
+
+## About this project
 
 This project makes use of [dynamic streams](http://doc.akka.io/docs/akka/2.6/scala/stream/stream-dynamic.html) from Akka Streams, notably `BroadcastHub` and `MergeHub`.  By [combining MergeHub and BroadcastHub](https://doc.akka.io/docs/akka/2.6/stream/stream-dynamic.html?language=scala#dynamic-fan-in-and-fan-out-with-mergehub-broadcasthub-and-partitionhub), you can get publish/subscribe functionality.
 
-## The good bit
+### The good bit
 
 The flow is defined once in the controller, and used everywhere from the `chat` action:
 
@@ -55,11 +74,11 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
 }
 ```
 
-## Prerequisites
+### Prerequisites to run this project locally
 
 You will need [JDK 11](https://adoptopenjdk.net/) and [sbt](http://www.scala-sbt.org/) installed.
 
-## Running
+### Running
 
 ```bash
 sbt run
